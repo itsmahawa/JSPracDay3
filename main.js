@@ -1,6 +1,6 @@
-var input = document.querySelector("#input");
-function convert() {
-  var output = document.querySelector("#output");
+const input = document.querySelector("#input");
+const convert = () => {
+  const output = document.querySelector("#output");
   if (input.value !== "") {
     output.style.display = "block";
   } else {
@@ -13,5 +13,5 @@ function convert() {
     (input.value * 453.592) / 1000;
 
   document.querySelector("#ounce").textContent = input.value * 16;
-}
+};
 input.addEventListener("input", convert);
